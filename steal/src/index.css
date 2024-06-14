@@ -7,7 +7,102 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+  --primary-color: #67B637;
+  --secondary-color: #4F70C2;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #222222;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  font: 1rem 300 'Montserrat', sans-serif ;
+}
+header nav img{
+  height: 50px;
+}
+.design{
+  background-color: var(--light-color);
+  color: var(--light-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease-in-out;
+  /* border-bottom: 1px solid var(--secondary-color); */
+}
+.design:hover{
+  background-color: #2222220e;
+  color: var(--light-color);
+}
+.design .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.design .info h2{
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.design .info p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  padding: 0 1rem;
+  margin: 0;
+  text-align: center;
+}
+.design .demo{
+  display: block;
+  margin-top: 1rem;
+  /* background-color: #222222; */
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+}
+
+.design .demo *{
+  max-width: calc(100vw - 2rem);
+  overflow: hidden;
+}
+
+.design .code{
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.design .code button{
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+.design .code button:last-child{
+  margin-right: 0;
+}
+
+.design .code button:hover{
+  background-color: var(--secondary-color);
 }

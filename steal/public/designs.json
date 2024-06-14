@@ -1,0 +1,86 @@
+{
+    "designs": {
+        "@attributes": {
+            "name": "designs",
+            "version": "1.0"
+        },
+        "design": [
+            {
+                "@attributes": {
+                    "name": "Navigation Bar",
+                    "id": "1",
+                    "category": "Navigation"
+                },
+                "htmlCode": {
+                    "@attributes": {
+                        "language": "HTML"
+                    },
+                    
+                        "#text": "<nav class='snipcss-8Yogm style-AM5Zm' id='style-AM5Zm'> <ul id='logo'> <li class='logo'><a href='/'><img src='https://akvatour.eu/static/media/logo.87fdb30629e318c08648.webp' alt=''></a></li> </ul> <ul class='links inactive'> <li class='links-li'><a href='/#Location'>Kje se nahajamo?</a></li> <li class='links-li'><a href='/#Gallery'>Galerija</a></li> <li class='links-li'><a href='/#Contacts'>Kontakt</a></li> <li class='links-li'><a href='/#Apartments'>Izbira</a></li> <li class='links-li'><a href='/business'>Business</a></li> </ul><button class='menu ' aria-label='Main Menu' aria-expanded='false'><svg width='100' height='100' viewBox='0 0 100 100'> <path class='line line1' d='M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058'></path> <path class='line line2' d='M 20,50 H 80'></path> <path class='line line3' d='M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942'></path> </svg></button> </nav>"     
+                    },
+                "cssCode": {
+                    "@attributes": {
+                        "language": "CSS"
+                    },
+                    "background-color": "var(--dark-color);",
+                    "#text": "body, html { background-color:  #faf9f6; font-family: montserrat, sans-serif; margin: 0; max-width: 100vw; padding: 0; overflow-x: hidden; scroll-behavior: smooth; scrollbar-color: rgba(155, 155, 155, 0.7) rgba(0, 0, 0, 0); scrollbar-width: thin; } nav { align-items: center; background-color:  #faf9f6; display: flex; height: 60px; justify-content: space-between; max-width: 100vw; padding: 1rem 0 1rem 1rem !important; width: 100%; z-index: 1; } ul { list-style: none; padding: 0; } .links { align-items: center; display: flex; justify-content: space-between; margin-left: 1rem; margin-right: 25%; min-width: 700px; width: 50%; } .menu { background-color: initial; border: none; cursor: pointer; display: none; padding: 0; position: absolute; right: 1.5rem; width: 4rem; } .logo:hover { cursor: pointer; opacity: 0.8; transform: scale(1.1); transition: all 0.25s ease-in-out; } .links-li a, .links-li a:visited { color: #000; font-size: 1.2rem; font-weight: 400; padding: 0.5rem 1rem; position: relative; text-decoration: none; transition: all 0.2s ease-in-out; } .links a:hover { color: grey; } .links a:hover::before, .links a::before { background-color: rgb(75, 75, 75); bottom: 0; content: ''; height: 2px; left: 50%; position: absolute; transform: translateX(-50%); transition: all 0.25s ease-in-out; width: 0; } .links a:hover::before { width: 100%; } .logo img { height: 68px; } #style-AM5Zm.style-AM5Zm { transition: top 0.3s ease; }"
+                },
+                "jsCode": {
+                    "@attributes": {
+                        "language": "JavaScript"
+                    },
+                    "#text": "console.log('Hello World')"
+                },
+                "date": {
+                    "@attributes": {
+                        "format": "dd.mm.yyyy"
+                    },
+                    "#text": "14.6.2024"
+                },
+                "author": {
+                    "@attributes": {
+                        "email": "john.doe@example.com"
+                    },
+                    "#text": "Andriy Gryban"
+                }
+            },
+            {
+                "@attributes": {
+                    "name": "Card Info",
+                    "id": "2",
+                    "category": "Cards"
+                },
+                "htmlCode": {
+                    "@attributes": {
+                        "language": "HTML"
+                    },
+                    "#text": "<section class='page-contain snipcss-426Hx'> <div class='data-card'> <h3>7</h3> <h4>Apartmajev</h4> <p>V samem centru Pirana (50m od Tartinijevega trga)</p><span class='link-text'>Zanima<svg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z' fill='#753BBD'></path> </svg></span> </div> <div class='data-card'> <h3>50+</h3> <h4>Apartmajev partnerjev</h4> <p>Po celotnem mestu Piran skupaj z partnerji lahko imate 50+ apartmajev</p><span class='link-text'>Sporoci<svg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z' fill='#753BBD'></path> </svg></span> </div> <div class='data-card'> <h3>100+</h3> <h4>Namestitev</h4> <p>Če imate veliko zaposlenih, vam lahko ponudimo namestitev tudi kar 100 ali vec ljudi</p><span class='link-text'>Želim<svg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z' fill='#753BBD'></path> </svg></span> </div> <div class='data-card'> <h3>40m</h3> <h4>Do Tartinijevega trga</h4> <p>Od naših apartmajev ter zelo blizu morja</p><span class='link-text'>WAW!<svg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'> <path fill-rule='evenodd' clip-rule='evenodd' d='M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z' fill='#753BBD'></path> </svg></span> </div> </section>"
+                },
+                "cssCode": {
+                    "@attributes": {
+                        "language": "CSS"
+                    },
+                    "#text": "body { font-family:montserrat,sans-serif; } * { font-family: montserrat,sans-serif; } * { font-family: montserrat, sans-serif; } body { background-color: #faf9f6; background-color: var(--white-color); font-family: montserrat,sans-serif; margin: 0; max-width: 100vw; padding: 0; } body { background-color: var(--white-color); font-family: montserrat, sans-serif; margin: 0px; max-width: 100vw; padding: 0px; } html { background-color: #faf9f6; background-color: var(--white-color); overflow-x: hidden; scroll-behavior: smooth; scrollbar-color: #9b9b9bb3 #0000; scrollbar-width: thin; } html { background-color: var(--white-color); overflow-x: hidden; scroll-behavior: smooth; scrollbar-color: rgba(155, 155, 155, 0.7) rgba(0, 0, 0, 0); scrollbar-width: thin; } :root { --secondary-color: #2e3c40; --primary-color: #e2ba5a; --white-color: #faf9f6; } @media (max-width: 1350px){ .page-contain { padding: 0 5% 4rem!important; } } .page-contain { align-items: center; display: flex; flex-wrap: wrap; font-family: Open Sans,sans-serif; font-style: none; justify-content: center; padding: 0 10% 4rem; } .page-contain { align-items: center; display: flex; flex-wrap: wrap; font-family: 'Open Sans', sans-serif; justify-content: center; padding: 0px 10% 4rem; } @media (max-width: 1350px){ .data-card { height: 18vw!important; padding: 1rem!important; width: 16vw!important; } } .data-card { background: hsla(0,1%,86%,.598); -webkit-clip-path: polygon(0 0,100% 0,100% 92%,0 100%); clip-path: polygon(0 0,100% 0,100% 92%,0 100%); display: block; flex-direction: column; margin: 1vw; min-height: 14vw; overflow: hidden; padding: 2.75em 1.5em; text-decoration: none; transition: transform .45s ease,background .45s ease; width: 10vw; } .data-card { background: rgba(220, 219, 219, 0.596); clip-path: polygon(0px 0px, 100% 0px, 100% 92%, 0px 100%); display: block; flex-direction: column; margin: 1vw; min-height: 14vw; overflow: hidden; padding: 2.75em 1.5em; text-decoration: none; transition: transform 0.45s ease 0s, background 0.45s ease 0s; width: 10vw; } .data-card:hover { background: #e2ba5a; background: var(--primary-color); transform: scale(1.02); } .data-card:hover { background: var(--primary-color); transform: scale(1.02); } .data-card:active,.data-card:hover { background: #e2ba5a; background: var(--primary-color); transform: scale(1.02); } .data-card:active,.data-card:hover { background: var(--primary-color); transform: scale(1.02); } .data-card:nth-child(3) { -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 93%); clip-path: polygon(0 0,100% 0,100% 100%,0 93%); } .data-card:nth-child(3) { clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 93%); } .data-card:nth-child(4) { -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 87%); clip-path: polygon(0 0,100% 0,100% 100%,0 87%); } .data-card:nth-child(4) { clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 87%); } .logo:hover { cursor: pointer; opacity: .8; transform: scale(1.1); -webkit-transform: scale(1.1); transition: all .25s ease-in-out; } .logo:hover { cursor: pointer; opacity: 0.8; transform: scale(1.1); transition: all 0.25s ease-in-out 0s; } .data-card:first-child { -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 90%); clip-path: polygon(0 0,100% 0,100% 100%,0 90%); } .data-card:first-child { clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 90%); } @media (max-width: 1350px){ .data-card h4  { font-size: .8em!important; } } .data-card h4  { color: #627084; font-size: 1em; font-weight: 700; letter-spacing: .1em; line-height: 1; margin: 0 0 1.777777778em; text-transform: uppercase; transition: color .45s ease; } .data-card h4  { color: rgb(98, 112, 132); font-size: 1em; font-weight: 700; letter-spacing: 0.1em; line-height: 1; margin: 0px 0px 1.77778em; text-transform: uppercase; transition: color 0.45s ease 0s; } .data-card p  { color: #faf9f6; color: var(--white-color); font-size: .9em; font-weight: 600; line-height: 1.1; margin: 0 0 1.25em; opacity: 0; transform: translateY(-1em); transition: opacity .45s ease,transform .5s ease; } .data-card p  { color: var(--white-color); font-size: 0.9em; font-weight: 600; line-height: 1.1; margin: 0px 0px 1.25em; opacity: 0; transform: translateY(-1em); transition: opacity 0.45s ease 0s, transform 0.5s ease 0s; } .link-text { display: none; } .data-card .link-text  { color: #e5b23e; font-size: 1em; font-weight: 600; line-height: .9; margin: auto 0 0; transition: color .45s ease; } .data-card .link-text  { color: rgb(229, 178, 62); font-size: 1em; font-weight: 600; line-height: 0.9; margin: auto 0px 0px; transition: color 0.45s ease 0s; } h3 { max-width: 100vw; overflow: hidden; } @media (max-width: 1350px){ .data-card h3  { font-size: 2em!important; padding: 0 0 .142857143em!important; } } .data-card h3  { border-bottom: 2px solid #e5b23e; color: #2e3c40; color: var(--secondary-color); font-size: 3em; font-weight: 600; line-height: 1; margin: 0 0 .142857143em; padding-bottom: .5em; transition: color .45s ease,border .45s ease; } .data-card h3  { border-bottom: 2px solid rgb(229, 178, 62); color: var(--secondary-color); font-size: 3em; font-weight: 600; line-height: 1; margin: 0px 0px 0.142857em; padding-bottom: 0.5em; transition: color 0.45s ease 0s, border 0.45s ease 0s; } .data-card:hover h3  { border-bottom-color: #e5b23e; } .data-card:hover h3  { color: #faf9f6; color: var(--white-color); } .data-card:hover h3  { border-bottom-color: rgb(229, 178, 62); } .data-card:hover h3  { color: var(--white-color); } .data-card:hover h4  { color: #faf9f6; color: var(--white-color); } .data-card:hover h4  { color: var(--white-color); } .data-card:hover p  { opacity: 1; transform: none; } .data-card:hover .link-text  { color: #faf9f6; color: var(--white-color); } .data-card:hover .link-text  { color: var(--white-color); } .data-card .link-text svg  { margin-left: .5em; transition: transform .6s ease; } .data-card .link-text svg  { margin-left: 0.5em; transition: transform 0.6s ease 0s; } .data-card:hover .link-text svg  { animation: point 1.25s infinite alternate; } .data-card:hover .link-text svg  { animation: 1.25s ease 0s infinite alternate none running point; } @keyframes point { 0% { transform: translateX(0px); transform: translateX(0px); } 100% { transform: translateX(0.1em); transform: translateX(0.1em); } }"
+                },
+                "jsCode": {
+                    "@attributes": {
+                        "language": "JavaScript"
+                    },
+                    "#text": "console.log('Form')"
+                },
+                "date": {
+                    "@attributes": {
+                        "format": "dd.mm.yyyy"
+                    },
+                    "#text": "14.6.2024"
+                },
+                "author": {
+                    "@attributes": {
+                        "email": "jane.doe@example.com"
+                    },
+                    "#text": "Andriy Gryban"
+                }
+            }
+        ]
+    }
+}

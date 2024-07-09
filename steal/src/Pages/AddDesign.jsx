@@ -19,10 +19,31 @@ const AddDesignForm = ({ isDesignPageVisible, toggleDesignPage }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const convertToXML = (data) => {
+    const xmlData = `
+      <design>
+        <name>${data.name}</name>
+        <author>${data.author}</author>
+        <category>${data.category}</category>
+        <html>${data.html}</html>
+        <css>${data.css}</css>
+        <js>${data.js}</js>
+      </design>
+    `;
+    return xmlData;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Form data:", formData);
+    const xmlData = convertToXML(formData);
+
     try {
-      const response = await axios.post("/api/designs", formData);
+      const response = await axios.post("http://localhost:5000/api", xmlData, {
+        headers: {
+          "Content-Type": "application/xml",
+        },
+      });
       if (response.status === 200) {
         alert("Design added successfully");
       } else {

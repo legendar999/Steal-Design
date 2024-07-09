@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Stealer by Grybanica</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            // Only perform redirection if we're on the 404 page
+            if (window.location.pathname === '/404.html') {
+                // Use the original path as a hash fragment for SPA routing
+                window.location.replace('/#' + window.location.href.split('/').pop());
+            }
+        })();
+    </script>
+</body>
+
+</html>
